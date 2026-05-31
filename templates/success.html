@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Success</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <div class="card">
+
+        <h1>Registration Successful 🎉</h1>
+
+        <p><strong>Name:</strong> {{ name }}</p>
+
+        <p><strong>Email:</strong> {{ email }}</p>
+
+        <p><strong>Event:</strong> {{ event }}</p>
+
+        <br>
+
+        <a href="/">Go Back Home</a>
+
+    </div>
+
+</body>
+</html>
