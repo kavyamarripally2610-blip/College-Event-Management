@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Event Registration</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <nav>
+        <a href="/">Home</a>
+        <a href="/events">Events</a>
+        <a href="/register">Register</a>
+    </nav>
+
+    <div class="card">
+
+        <h1>Student Event Registration</h1>
+
+        <form method="POST">
+
+            <label>Student Name:</label>
+            <br><br>
+
+            <input type="text" name="name" required>
+
+            <br><br>
+
+            <label>Email:</label>
+            <br><br>
+
+            <input type="email" name="email" required>
+
+            <br><br>
+
+            <label>Select Event:</label>
+            <br><br>
+
+            <select name="event">
+                <option>Tech Fest 2026</option>
+                <option>Cultural Fest 2026</option>
+            </select>
+
+            <br><br>
+
+            <button type="submit">
+                Register
+            </button>
+
+        </form>
+
+    </div>
+
+</body>
+</html>
